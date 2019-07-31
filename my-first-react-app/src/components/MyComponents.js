@@ -10,7 +10,7 @@ class MyComponents extends Component {
     };
 
     increaseCount = () => {
-        console.log("increased");
+        console.log("increaseed");
         console.log(this.state.count);
         this.setState({count: this.state.count + 1});
 
