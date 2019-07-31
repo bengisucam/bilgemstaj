@@ -5,16 +5,23 @@ import './MyComponents.css';
 class MyComponents extends Component {
 
     state = {
-        count: 0
+        count: 10
         //num: "1"
     };
 
     increaseCount = () => {
-        console.log("increaseed");
+        console.log("increased");
         console.log(this.state.count);
         this.setState({count: this.state.count + 1});
 
     };
+
+    decreaseCount = () => {
+            console.log("decreased");
+            console.log(this.state.count);
+            this.setState({count: this.state.count - 1});
+
+        };
 
     divStyle = {
         fontSize:"50px"
